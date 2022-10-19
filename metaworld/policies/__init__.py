@@ -33,6 +33,7 @@ from metaworld.policies.sawyer_door_unlock_v1_policy import SawyerDoorUnlockV1Po
 from metaworld.policies.sawyer_door_unlock_v2_policy import SawyerDoorUnlockV2Policy
 from metaworld.policies.sawyer_drawer_close_v1_policy import SawyerDrawerCloseV1Policy
 from metaworld.policies.sawyer_drawer_close_v2_policy import SawyerDrawerCloseV2Policy
+from metaworld.policies.sawyer_drawer_put_block_v2_policy import SawyerDrawerPutBlockV2Policy
 from metaworld.policies.sawyer_drawer_open_v1_policy import SawyerDrawerOpenV1Policy
 from metaworld.policies.sawyer_drawer_open_v2_policy import SawyerDrawerOpenV2Policy
 from metaworld.policies.sawyer_faucet_close_v1_policy import SawyerFaucetCloseV1Policy
@@ -125,6 +126,7 @@ __all__ = [
     'SawyerDrawerCloseV2Policy',
     'SawyerDrawerOpenV1Policy',
     'SawyerDrawerOpenV2Policy',
+    'SawyerDrawerPutBlockV2Policy',
     'SawyerFaucetCloseV1Policy',
     'SawyerFaucetCloseV2Policy',
     'SawyerFaucetOpenV1Policy',
