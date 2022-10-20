@@ -123,18 +123,18 @@ class SawyerDrawerPutBlockEnvV2(SawyerXYZEnv):
         self.block_init_pos = self.obj_init_pos[3:]
         # also randomize block position
 
-        print("drawer")
-        print(self.drawer_init_pos)
-        print("block")
-        print(self.block_init_pos)
+        # print("drawer")
+        # print(self.drawer_init_pos)
+        # print("block")
+        # print(self.block_init_pos)
 
         # Set mujoco body to computed position
         self.sim.model.body_pos[
             self.model.body_name2id("drawer")
         ] = self.drawer_init_pos
 
-        print(self.model.body_name2id("drawer"))
-        print(self.model.body_name2id("obj"))
+        # print(self.model.body_name2id("drawer"))
+        # print(self.model.body_name2id("obj"))
         self.sim.model.body_pos[self.model.body_name2id("obj")] = self.block_init_pos
         self._set_obj_xyz(self.fix_extreme_obj_pos(self.block_init_pos))
 
